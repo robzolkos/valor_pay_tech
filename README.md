@@ -4,7 +4,7 @@ Ruby client for the [Valor PayTech](https://valorpaytech.com/) Hosted Payment Pa
 
 ## Installation
 
-Add to your Gemfile:
+Add to your Gemfile and run `bundle install`:
 
 ```ruby
 gem "valor_pay_tech"
