@@ -1,0 +1,8 @@
+{
+  "packages": {
+    ".": {
+      "release-type": "ruby",
+      "version-file": "lib/valor_pay_tech/version.rb"
+    }
+  }
+}
