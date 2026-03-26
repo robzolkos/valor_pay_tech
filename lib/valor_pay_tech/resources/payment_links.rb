@@ -7,7 +7,7 @@ module ValorPayTech
 
       DEFAULTS = {
         epage: 1,
-        never_expire: 1,
+        never_expire: '1',
         shipping_country: 'US'
       }.freeze
 
