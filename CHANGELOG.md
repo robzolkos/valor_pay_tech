@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/robzolkos/valor_pay_tech/compare/v0.2.0...v0.2.1) (2026-03-26)
+
+
+### Bug Fixes
+
+* use correct never_expire param name and string type ([#6](https://github.com/robzolkos/valor_pay_tech/issues/6)) ([ffb6cf2](https://github.com/robzolkos/valor_pay_tech/commit/ffb6cf28a9db1e6816486b649f1f866476b152cb))
+
 ## [0.2.0](https://github.com/robzolkos/valor_pay_tech/compare/v0.1.1...v0.2.0) (2026-03-26)
 
 
