@@ -7,7 +7,8 @@ module ValorPayTech
 
       DEFAULTS = {
         epage: 1,
-        shipping_country: "US"
+        never_expire: 1,
+        shipping_country: 'US'
       }.freeze
 
       def initialize(client)
@@ -16,7 +17,7 @@ module ValorPayTech
 
       def create(params = {})
         validate!(params)
-        @client.post("?hostedpagesale", DEFAULTS.merge(params))
+        @client.post('?hostedpagesale', DEFAULTS.merge(params))
       end
 
       private
@@ -25,7 +26,7 @@ module ValorPayTech
         missing = REQUIRED_PARAMS.select { |key| params[key].nil? }
         return if missing.empty?
 
-        raise ArgumentError, "Missing required parameters: #{missing.join(", ")}"
+        raise ArgumentError, "Missing required parameters: #{missing.join(', ')}"
       end
     end
   end
