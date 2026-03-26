@@ -21,7 +21,7 @@ class PaymentLinksTest < ValorPayTech::TestCase
     stub_request(:post, staging_url('?hostedpagesale'))
       .with do |req|
         body = JSON.parse(req.body)
-        body['epage'] == 1 && body['never_expire'] == 1 && body['shipping_country'] == 'US'
+        body['epage'] == 1 && body['never_expire'] == '1' && body['shipping_country'] == 'US'
       end
       .to_return(status: 200, body: Fixtures.successful_payment_link.to_json)
 
@@ -32,14 +32,14 @@ class PaymentLinksTest < ValorPayTech::TestCase
     stub_request(:post, staging_url('?hostedpagesale'))
       .with do |req|
         body = JSON.parse(req.body)
-        body['never_expire'] == 0
+        body['never_expire'] == '0'
       end
       .to_return(status: 200, body: Fixtures.successful_payment_link.to_json)
 
     ValorPayTech.client.payment_links.create(
       amount: 1.00,
       txn_type: 'sale',
-      never_expire: 0
+      never_expire: '0'
     )
   end
 
