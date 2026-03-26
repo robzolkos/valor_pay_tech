@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/robzolkos/valor_pay_tech/compare/v0.1.1...v0.2.0) (2026-03-26)
+
+
+### Features
+
+* default never_expire to 1 for payment links ([#4](https://github.com/robzolkos/valor_pay_tech/issues/4)) ([9fa05d3](https://github.com/robzolkos/valor_pay_tech/commit/9fa05d340fdd997a2122713e0bf0b879ffb2fcdb))
+
 ## [0.1.1](https://github.com/robzolkos/valor_pay_tech/compare/v0.1.0...v0.1.1) (2026-02-20)
 
 
